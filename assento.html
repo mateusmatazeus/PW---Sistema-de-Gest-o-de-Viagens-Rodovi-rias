@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>ZeusViagens</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="font/fonts.css">
+ 
+    <link rel="stylesheet" href="css/normalize.css">
+    
+    <link rel="stylesheet" href="css/utility.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<style>
+        .footer-item {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .social-links {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: transparent;
+        }
+       
+        footer {
+            background-color: #0f80ac;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        .footer-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .footer-container a {
+            text-decoration: none;
+            color: white;
+            margin: 0 20px;
+        }
+
+        * {
+            padding: 0;
+            margin: 0;
+            font-family: sans-serif;
+        }
+
+        ul {
+            list-style: none;
+            background: #0f80ac;
+            text-align: center;
+        }
+
+        ul li {
+            display: inline-block;
+            position: relative;
+        }
+
+        ul li a {
+            display: block;
+            padding: 20px 25px;
+            color: #FFF;
+            text-decoration: none;
+            text-align: center;
+            font-size: 16px;
+        }
+
+        ul li ul.dropdown li {
+            display: block;
+            background: #0f80ac;
+            margin: 2px 0px;
+        }
+
+        ul li ul.dropdown {
+            width: auto;
+            background: #0d7399;
+            position: absolute;
+            z-index: 999;
+            display: none;
+        }
+
+        ul li a:hover {
+            background: #222;
+        }
+
+        ul li:hover ul.dropdown {
+            display: block;
+        }
+ol {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .lugares {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center;
+    }
+
+    .lugar {
+        margin: 10px;
+        display: flex;
+        flex: 0 0 14%;
+        padding: 10px;
+        position: relative;
+    } 
+
+    .receipt-options {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.print-button {
+    display: inline-block;
+    margin: 0 10px;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #fff;
+    background-color: #0f80ac;
+    border: none;
+    border-radius: 25px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.print-button:hover {
+    background-color: #0f80ac;
+}
+
+</style>
+
+<body>
+    
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+
+            <li>
+                <a href="#">Reservas &#x25BE;</a>
+                <ul class="dropdown">
+                    <li><a href="reserva.html">Fazer reserva</a></li>
+                    <li><a href="historico.html">Ver reservas</a></li>
+                </ul>
+            </li>
+            <li><a href="perfilCliente.html">Meu perfil</a></li>
+            <li><a href="contacto.html">Contacte-nos</a></li>
+            <li><a href="login.html">Sair</a></li>
+        </ul>
+    </nav>
+
+    <header class="flex">
+    <div class="container">
+        <div class="cockpit">
+            <h1>Por favor, selecione os assentos</h1>
+        </div>
+        <div class="exit exit--front fuselage">
+
+        </div>
+        <ol class="cabin fuselage">
+            <li class="linha-1">
+                <ol class="lugares" type="A">
+                    <li class="lugar">
+                        <input type="checkbox" id="1A" />
+                        <label for="1A">1A</label>
+                    </li>
+                    <li class="lugar">
+                        <input type="checkbox" id="2A" />
+                        <label for="2A">2A</label>
+                    </li>
+                    <li class="lugar">
+                        <input type="checkbox" id="3A" />
+                        <label for="3A">3A</label>
+                    </li>
+                    <li class="lugar">
+                        <input type="checkbox" id="4A" />
+                        <label for="4A">4A</label>
+                    </li>
+
+                </ol>
+            </li>
+            <li class="linha-2">
+                <ol class="lugares" type="B">
+                    <li class="lugar">
+                        <input type="checkbox" id="1B" />
+                        <label for="1B">1B</label>
+                    </li>
+                    <li class="lugar">
+                        <input type="checkbox" id="2B" />
+                        <label for="2B">2B</label>
+                    </li>
+                    <li class="lugar">
+                        <input type="checkbox" id="3B" />
+                        <label for="3B">3B</label>
+                    </li>
+                    <li class="lugar">
+                        <input type="checkbox" id="4B" />
+                        <label for="4B">4B</label>
+                    </li>
+
+                </ol>
+            </li>
+            <li class="linha-3">
+                <ol class="lugares" type="C">
+                    <li class="lugar">
+                        <input type="checkbox" id="1C" />
+                        <label for="1C">1C</label>
+                    </li>
+                    <li class="lugar">
+                        <input type="checkbox" id="2C" />
+                        <label for="2C">2C</label>
+                    </li>
+                    <li class="lugar">
+                        <input type="checkbox" id="3C" />
+                        <label for="3C">3C</label>
+                    </li>
+                    <li class="lugar">
+                        <input type="checkbox" id="4D" />
+                        <label for="4D">4D</label>
+                    </li>
+
+                </ol>
+            </li>
+            <li class="linha-4">
+                <ol class="lugares" type="D">
+                    <li class="lugar">
+                        <input type="checkbox" id="1D" />
+                        <label for="1D">1D</label>
+                    </li>
+                    <li class="lugar">
+                        <input type="checkbox" id="2D" />
+                        <label for="2D">2D</label>
+                    </li>
+                    <li class="lugar">
+                        <input type="checkbox" id="3D" />
+                        <label for="3D">3D</label>
+                    </li>
+                    <li class="lugar">
+                        <input type="checkbox" id="4D" />
+                        <label for="4D">4D</label>
+                    </li>
+
+                </ol>
+            </li>
+            <li class="linha-5">
+                <ol class="lugares" type="E">
+                    <li class="lugar">
+                        <input type="checkbox" id="1E" />
+                        <label for="1E">1E</label>
+                    </li>
+                    <li class="lugar">
+                        <input type="checkbox" id="2E" />
+                        <label for="2E">2E</label>
+                    </li>
+                    <li class="lugar">
+                        <input type="checkbox" id="3E" />
+                        <label for="3E">3E</label>
+                    </li>
+                    <li class="lugar">
+                        <input type="checkbox" id="4E" />
+                        <label for="4E">4E</label>
+                    </li>
+
+                </ol>
+            </li>
+            <li class="linha-6">
+                <ol class="lugares" type="F">
+                    <li class="lugar">
+                        <input type="checkbox" id="1F" />
+                        <label for="1F">1F</label>
+                    </li>
+                    <li class="lugar">
+                        <input type="checkbox" id="2F" />
+                        <label for="2F">2F</label>
+                    </li>
+                    <li class="lugar">
+                        <input type="checkbox" id="3F" />
+                        <label for="3F">3F</label>
+                    </li>
+                    <li class="lugar">
+                        <input type="checkbox" id="4F" />
+                        <label for="4F">4F</label>
+                    </li>
+
+                </ol>
+            </li>
+            <li class="linha-7">
+                <ol class="lugares" type="G">
+                    <li class="lugar">
+                        <input type="checkbox" id="1G" />
+                        <label for="1G">1G</label>
+                    </li>
+                    <li class="lugar">
+                        <input type="checkbox" id="2G" />
+                        <label for="2G">2G</label>
+                    </li>
+                    <li class="lugar">
+                        <input type="checkbox" id="3G" />
+                        <label for="3G">3G</label>
+                    </li>
+                    <li class="lugar">
+                        <input type="checkbox" id="4G" />
+                        <label for="4G">4G</label>
+                    </li>
+
+                </ol>
+            </li>
+            <li class="linha-8">
+                <ol class="lugares" type="H">
+                    <li class="lugar">
+                        <input type="checkbox" id="1H" />
+                        <label for="1H">1H</label>
+                    </li>
+                    <li class="lugar">
+                        <input type="checkbox" id="2H" />
+                        <label for="2H">2H</label>
+                    </li>
+                    <li class="lugar">
+                        <input type="checkbox" id="3H" />
+                        <label for="3H">3H</label>
+                    </li>
+                    <li class="lugar">
+                        <input type="checkbox" id="4H" />
+                        <label for="4H">4H</label>
+                    </li>
+
+
+                </ol>
+            </li>
+        </ol>
+        <br>
+        <div class="receipt-options">
+            <a href="reserva.html" class="print-button">Cancelar</a>
+            <a href="pagamento.html" class="print-button">Continuar</a>
+        </div>
+    </div>
+</header>
+
+<footer>
+    <div class="container">
+        <div class="footer-item">
+            <a href="index.html" class="site-brand">
+                Zeus<span>Viagens</span>
+            </a>
+            <p class="text">A Zeus Viagens é uma empresa de transporte dedicada a proporcionar experiências de
+                viagem seguras, confiáveis e confortáveis para nossos clientes. Com uma frota moderna e uma equipe
+                de motoristas altamente treinados, estamos comprometidos em levá-lo aonde você precisa ir, com
+                comodidade e tranquilidade.</p>
+        </div>
+
+        <div class="footer-item">
+            <h2>Siga-nos no: </h2>
+            <ul class="social-links">
+                <li>
+                    <a href="#">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </li>
+
+            </ul>
+        </div>
+
+        <div class="footer-item">
+            <h2>Lugares populares:</h2>
+            <ul>
+                <li><a href="#">Beira</a></li>
+                <li><a href="#">Maputo</a></li>
+                <li><a href="#">Pemba</a></li>
+                <li><a href="#">Nampula</a></li>
+                <li><a href="#">Quelimane</a></li>
+                <li><a href="#">Inhambane</a></li>
+            </ul>
+        </div>
+
+</footer>
+</body>
+
+</html>

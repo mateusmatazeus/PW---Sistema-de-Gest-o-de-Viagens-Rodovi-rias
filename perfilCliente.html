@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="stylesheet" href="css/preStyle.css">
+  <title>ZeusViagens - Perfil do usuario</title>
+  
+</head>
+
+<body>
+ 
+<nav>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+
+    <li>
+        <a href="#">Reservas &#x25BE;</a>
+        <ul class="dropdown">
+            <li><a href="reserva.html">Fazer reserva</a></li>
+            <li><a href="historico.html">Ver reservas</a></li>
+        </ul>
+    </li>
+    <li><a href="perfilCliente.html">Meu perfil</a></li>
+    <li><a href="contacto.html">Contacte-nos</a></li>
+    <li><a href="login">Sair</a></li>
+</ul>
+   
+
+
+  <div class="profile-page pt-5">
+    <div class="edit-profile">
+      <div class="profile-pic">
+        <div class="profile-picture">
+          <img class="pic" id="photo"
+            src="_imagens/man-profile-cartoon-smiling-round-icon-vector-illustration-graphic-design-135443422.jpg" alt="">
+          <input type="file" id="file">
+          <label for="file" id="uploadpic">Escolha uma foto</label>
+        </div>
+      </div>
+      <form class="info">
+        <div class="box">
+          <h4>Informacoes gerais</h4>
+          <div>
+            <label for="fname">Nome:</label>
+            <input type="text" id="fname" name="fname" placeholder="Nome">
+          </div>
+          <div>
+            <label for="lname">Apelido:</label>
+            <input type="text" id="lname" name="lname" placeholder="Apelido">
+          </div>
+        </div>
+        <div class="box">
+          <h4>Informacoes pessoais</h4>
+          <div>
+            <label for="id">Numero de BI:</label>
+            <input type="text" id="id" name="id" placeholder="123456789F">
+          </div>
+          <div>
+            <label for="phone">Telefone:</label>
+            <input type="text" id="phone" name="phone" placeholder="(+258) 821234567">
+          </div>
+          <div>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="mmateus@email.com">
+          </div>
+        </div>
+
+        <div class="box">
+          <h4>Informacoes de pagamento</h4>
+          <div>
+            <label for="cardnum">Numero de cartao:</label>
+            <input type="text" id="cardnum" name="cardnum" placeholder="123456789">
+          </div>
+          <div>
+            <label for="cvv">CVV:</label>
+            <input type="text" id="cvv" name="cvv" placeholder="123">
+          </div>
+          <div>
+            <label for="payment">Metodo de pagamento/ Data de validade</label>
+            <select name="paymentcard" id="payment">
+              <optgroup>
+                <option value="">Paypal</option>
+                <option value="">Cartao de credito</option>
+              </optgroup>
+              <input type="month" id="payment" name="paymentexp">
+          </div>
+        </div>
+      
+        <div id="box4">
+          <h4>Gestao do perfil</h4>
+
+          <div class="receipt-options">
+            <a href="editarperfil.html" class="print-button">Editar</a>
+            <a href="#" class="print-button">Apagar</a>
+        </div>
+        </div>
+      </form>
+
+    </div>
+  </div>
+</nav>
+</body>
+
+</html>

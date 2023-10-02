@@ -1,0 +1,248 @@
+
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>ZeusViagens</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+
+    * {
+        padding: 0;
+        margin: 0;
+        font-family: sans-serif;
+    }
+
+    ul {
+        list-style: none;
+        background: #0f80ac;
+        text-align: center;
+    }
+
+    ul li {
+        display: inline-block;
+        position: relative;
+    }
+
+    ul li a {
+        display: block;
+        padding: 20px 25px;
+        color: #FFF;
+        text-decoration: none;
+        text-align: center;
+        font-size: 16px;
+    }
+
+    ul li ul.dropdown li {
+        display: block;
+        background: #0f80ac;
+        margin: 2px 0px;
+    }
+
+    ul li ul.dropdown {
+        width: auto;
+        background: #0d7399;
+        position: absolute;
+        z-index: 999;
+        display: none;
+    }
+
+    ul li a:hover {
+        background: #222;
+    }
+
+    ul li:hover ul.dropdown {
+        display: block;
+    }
+
+    ol {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+
+
+    .receipt-options {
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+    }
+
+    .print-button {
+        display: inline-block;
+        margin: 0 10px;
+        padding: 10px 20px;
+        text-decoration: none;
+        color: #fff;
+        background-color: #0f80ac;
+        border: none;
+        border-radius: 25px;
+        font-size: 1rem;
+        cursor: pointer;
+    }
+
+    .print-button:hover {
+        background-color: #0f80ac;
+    }
+</style>
+
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="/indexAdmin.html">Home</a></li>
+
+            <li>
+                <a href="#">Carro &#x25BE;</a>
+                <ul class="dropdown">
+                    <li><a href="/adicionarCarro.html">Adicionar</a></li>
+                    <li><a href="/apagarCarro.html">Remover</a></li>
+                    <li><a href="/actualizarCarro.html">Actualizar</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">Motorista &#x25BE;</a>
+                <ul class="dropdown">
+                    <li><a href="/adicionarCarro.html">Adicionar</a></li>
+                    <li><a href="/apagarCarro.html">Remover</a></li>
+                    <li><a href="/actualizarCarro.html">Actualizar</a></li>
+                </ul>
+            </li>
+            <li><a href="/relatorio.html">Relatorio</a></li>
+            <li><a href="/login.html">Sair</a></li>
+    
+        </ul>
+    </nav>
+
+    <header>
+        <h1 style="margin-top: 150px;">Carros registados no sistema</h1>
+    </header> 
+    <header class="flex">
+        <main style="margin-top: 100px;">
+            <div class="table">
+                <table width="100%" cellspacing="0">
+                    <TR>
+                        <th>ID</th>
+                        <th>Nome</th>
+                        <th>Motorista</th>
+                        <th>Tipo</th>
+                        <th>Origem</th>
+                        <th>Destino</th>
+                        <th>Data de partida</th>
+                        <th>Hora de partida</th>
+                        <th>Hora de chegada</th>
+                        <th>Total de assentos</th>
+                        <th>Distancia (em km)</th>
+                    <TR>
+                        <TD>01</TD>
+                        <TD>Zeus X</TD>
+                        <TD>Mateus</TD>
+                        <TD>Normal</TD>
+                        <TD>Beira</TD>
+                        <TD>Chimoio</TD>
+                        <TD>10/10/2023</TD>
+                        <TD>04h</TD>
+                        <TD>12h</TD>
+                        <TD>25</TD>
+                        <TD>500</TD>
+                        <td class="continue-button">
+
+                            <a href="actualizarCarro.html"> <button>Actualizar</button></a>
+                            <a href="apagarCarro.html" ><button>Apagar</button></a>
+                         </td>
+                    </TR>
+                    <TR>
+                        <TD>01</TD>
+                        <TD>Zeus Y</TD>
+                        <TD>Mateus</TD>
+                        <TD>Um andar</TD>
+                        <TD>Beira</TD>
+                        <TD>Pemba</TD>
+                        <TD>10/10/2023</TD>
+                        <TD>04h</TD>
+                        <TD>12h</TD>
+                        <TD>25</TD>
+                        <TD>500</TD>
+                        <td class="continue-button">
+
+                           <a href="actualizarCarro.html"> <button>Actualizar</button></a>
+                           <a href="apagarCarro.html" ><button>Apagar</button></a>
+                        </td>
+                    </TR>
+                    
+
+                    </TR>
+                </table>
+            </div>
+        </main>
+        <br>
+        </div>
+    </header>
+    <main class="table" style="margin-top: 0;">
+        <div class="delete-data">
+            <h1>Adicionar carro</h1>
+            <h2>Se deseja adicionar em carro no sistema, clique no botão abaixo.</h2>
+            <button><a href="adicionarCarro.html" style="text-decoration: none; color: white;">Adicionar</a></button>
+
+        </div>
+    </main>
+    
+    <header>
+        <h1 style="margin-top: 150px;">Motoristas registados no sistema</h1>
+    </header> 
+    <header class="flex">
+        <main style="margin-top: 25px;">
+            <div class="table">
+                <table width="100%" cellspacing="0">
+                    <TR>
+                        <th>Nome</th>
+                        <th>Numero de telefone</th>
+                        <th>Licença</th>
+                    <TR>
+                        <TD>Mateus</TD>
+                        <TD>(+258) 821234567</TD>
+                        <TD>Válida</TD>
+                        <td class="continue-button">
+
+                            <a href="actualizarCarro.html"> <button>Actualizar</button></a>
+                            <a href="apagarCarro.html" ><button>Apagar</button></a>
+                         </td>
+                    </TR>
+                    <TR>
+                        <TD>Mateus</TD>
+                        <TD>(+258) 821234567</TD>
+                        <TD>Inválida</TD>
+                        <td class="continue-button">
+
+                           <a href="actualizarCarro.html"> <button>Actualizar</button></a>
+                           <a href="apagarCarro.html" ><button>Apagar</button></a>
+                        </td>
+                    </TR>
+                    
+
+                    </TR>
+                </table>
+            </div>
+        </main>
+        <br>
+        </div>
+    </header>
+    <main class="table" style="margin-top: 0;">
+        <div class="delete-data">
+            <h1>Adicionar Motorista</h1>
+            <h2>Se deseja adicionar um Motorista no sistema, clique no botão abaixo.</h2>
+            <button><a href="adicionarMotorista.html" style="text-decoration: none; color: white;">Adicionar</a></button>
+
+        </div>
+    </main>
+</body>
+
+</html>

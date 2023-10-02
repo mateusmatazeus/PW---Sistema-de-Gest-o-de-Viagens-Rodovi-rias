@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actualizar Motorista</title>
+    <link rel="stylesheet" href="css/carro.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="indexAdmin.html">Home</a></li>
+
+            <li>
+                <a href="#">Carro &#x25BE;</a>
+                <ul class="dropdown">
+                    <li><a href="adicionarCarro.html">Adicionar</a></li>
+                    <li><a href="apagarCarro.html">Remover</a></li>
+                    <li><a href="actualizarCarro.html">Actualizar</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">Motorista &#x25BE;</a>
+                <ul class="dropdown">
+                    <li><a href="adicionarMotorista.html">Adicionar</a></li>
+                    <li><a href="apagarMotorista.html">Remover</a></li>
+                    <li><a href="actualizarMotorista.html">Actualizar</a></li>
+                </ul>
+            </li>
+            <li><a href="relatorio.html">Relatorio</a></li>
+            <li><a href="login.html">Sair</a></li>
+    
+        </ul>
+    </nav>    
+  
+    
+
+    <form action="#" style="margin-top: 180px;">
+        <div style="margin-top: 190px; margin-bottom: 30px;"><h1>Preencha os dados para adicionar um novo motorista no sistema</h1></div>
+
+        <label for="driverName">Nome do motorista:</label>
+        <input type="text" id="driverName" name="driverName" required placeholder="Nome"><br>
+
+        <label for="phoneNumber">Numero de celular:</label>
+        <input type="text" id="phoneNumber" name="phoneNumber" required placeholder="(+xxx) 8xxxxxxxx"><br>
+
+        <label for="bus_type">Estado da licença:</label>
+        <select id="bus_type" name="bus_type">
+            <option placeholder="AC">Válida</option>
+            <option placeholder="Non-AC">Inválida</option>
+        </select><br>
+
+
+        <div class="receipt-options" style="margin-bottom: 20px;">
+            <a href="indexAdmin.html" class="print-button">Cancelar</a>
+            <a href="#" class="print-button">Actualizar</a>
+        </div>
+    </form>
+</body>
+</html>

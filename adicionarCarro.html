@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adicionar Carro</title>
+    <link rel="stylesheet" href="css/carro.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="indexAdmin.html">Home</a></li>
+
+            <li>
+                <a href="#">Carro &#x25BE;</a>
+                <ul class="dropdown">
+                    <li><a href="adicionarCarro.html">Adicionar</a></li>
+                    <li><a href="apagarCarro.html">Remover</a></li>
+                    <li><a href="actualizarCarro.html">Actualizar</a></li>
+                </ul>
+            </li>
+            <li><a href="relatorio.html">Relatorio</a></li>
+            <li><a href="login.html">Sair</a></li>
+    
+        </ul>
+</nav>
+    
+
+  
+    <form action="#" style="margin-top: 180px;">
+        <div style="margin-top: 190px; margin-bottom: 30px;"><h1>Preencha os dados para adicionar um carro no sistema</h1></div>
+        <label for="busName">Nome do carro</label>
+        <input type="text" id="busName" name="busName" required placeholder="Nome"><br>
+
+        <label for="driverName">Nome do motorista:</label>
+        <input type="text" id="driverName" name="driverName" required placeholder="Nome"><br>
+
+        <label for="bus_type">Tipo de carro:</label>
+        <select id="bus_type" name="bus_type">
+            <option placeholder="AC">Com AC</option>
+            <option placeholder="Non-AC">Sem-AC</option>
+            <option placeholder="Sleeper">Normal</option>
+            <option placeholder="Seater">Um andar</option>
+        </select><br>
+
+        <label for="source">Origem:</label>
+        <input type="text" id="source" name="source" required placeholder="Origem"><br>
+
+        <label for="destination">Destino:</label>
+        <input type="text" id="destination" name="destination" required placeholder="Destino"><br>
+
+        <label for="journeyDate">Data da primeira viagem:</label>
+        <input type="date" name="busJourneyDate" placeholder="11/11/23"><br>
+
+        <label for="arrival_time">Hora de partida:</label>
+        <input type="time" id="arrival_time" name="arrival_time" required placeholder="04:00"><br>
+
+        <label for="departure_time">Hora de chegada:</label>
+        <input type="time" id="departure_time" name="departure_time" required placeholder="16:00"><br>
+
+        <label for="totalSeats">Total de lugares:</label>
+        <input type="number" id="totalSeats" name="totalSeats" min="0" required ><br>
+
+        <label for="distance">Distancia (em km):</label>
+        <input type="number" id="distance" name="distance" required min="0"><br>
+
+        <label for="fare">Preço:</label>
+        <input type="number" id="fare" name="fare" required ><br>
+
+        <div class="receipt-options" style="margin-bottom: 20px;">
+            <a href="indexAdmin.html" class="print-button">Cancelar</a>
+            <a href="#" class="print-button">Adicionar</a>
+        </div>
+    </form>
+</body>
+</html>

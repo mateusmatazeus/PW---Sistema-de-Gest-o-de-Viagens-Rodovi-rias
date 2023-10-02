@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>ZeusViagens - Reserva de Passagem</title>
+</head>
+
+<body>
+
+    <style>
+        .receipt-options {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .download-button,
+        .print-button {
+            display: inline-block;
+            margin: 0 10px;
+            padding: 10px 20px;
+            text-decoration: none;
+            color: #fff;
+            background-color: #0f80ac;
+            border: none;
+            border-radius: 25px;
+            font-size: 1rem;
+            cursor: pointer;
+        }
+
+        .download-button:hover,
+        .print-button:hover {
+            background-color: #0f80ac;
+        }
+    </style>
+    <div class="container">
+        <div class="form-image">
+            <img src="assets/img/undraw_confirmed_re_sef7.svg">
+        </div>
+        <div class="form">
+            <form action="#">
+                <div class="form-header">
+                    <div class="title">
+                        <h1>Pagamento efectuado com sucesso</h1>
+                    </div>
+                </div>
+
+                <div class="input-group">
+                    <p>O seu pagamento foi efetuado com sucesso.</p>
+                </div>
+                <div class="input-group">
+                    <p>Um recibo foi gerado para a sua referência.</p>
+                </div>
+
+                <div class="receipt-options">
+                    <a href="reserva.html" class="download-button">Voltar</a>
+                    <a href="#" class="print-button">Baixar Recibo</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

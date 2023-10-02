@@ -1,0 +1,188 @@
+
+body {
+    font-family: sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+header ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+header ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+header ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+header ul li a:hover {
+    color: #00FF8C;
+    background: transparent;
+}
+
+
+.user-profile {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.user-profile h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.user-profile label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.user-profile input[type="text"],
+.user-profile input[type="email"],
+.user-profile input[type="tel"],
+.user-profile select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.user-profile button#edit-profile {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.user-profile button#edit-profile:hover {
+    background-color: #00FF8C;
+    color: #333;
+}
+
+
+.travel-history {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.travel-history h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.travel-history table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.travel-history table th,
+.travel-history table td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+footer ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+footer ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+footer ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+footer ul li a:hover {
+    color: #00FF8C;
+    background: transparent;
+}
+
+
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family:sans-serif;
+    box-sizing: border-box;
+    }
+    body
+    {
+        font-family:sans-serif;
+    background-color: #00FF8C;
+    }
+    ul {
+    list-style: none;
+    background: #333;
+    text-align: center;
+    }
+    ul li {
+    display: inline-block;
+    position: relative;
+    }
+    ul li a {
+    display: block;
+    padding: 20px 25px;
+    color: #FFF;
+    text-decoration: none;
+    text-align: center;
+    font-size: 16px;
+    }
+    ul li ul.dropdown li {
+    display: block;
+    background: #333;
+    margin: 2px 0px;
+    }
+    ul li ul.dropdown {
+    width:auto;
+    background: #00FF8C;
+    position: absolute;
+    z-index: 999;
+    display: none;
+    }
+    ul li a:hover {
+    background: #222;
+    }
+    ul li:hover ul.dropdown{
+    display: block;
+    }
+    

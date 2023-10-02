@@ -1,0 +1,148 @@
+
+/* Estilos gerais */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos para o cabeçalho */
+header {
+    background-color: #0f80ac;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Estilos para o título */
+h1 {
+    font-size: 24px;
+    margin: 0;
+}
+
+/* Estilos para a tabela */
+.table {
+    text-align: center;
+    margin: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 10px;
+
+}
+td {
+    color: black;
+}
+
+th {
+    background-color: #0f80ac;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* Estilos para os botões na tabela */
+.table .continue-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.table button {
+    margin: 5px;
+    padding: 8px 15px;
+    background-color: #0f80ac;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 25px;
+    transition: background-color 0.3s ease;
+}
+
+.table button:hover {
+    background-color: #0f80ac;
+}
+
+/* Estilos para o segundo main (formulário de edição de dados) */
+
+/* Estilos para o terceiro main */
+.delete-data {
+    text-align: center;
+    margin: 20px;
+}
+
+.delete-data h1 {
+    font-size: 24px;
+    color: #0f80ac;
+    margin-bottom: 10px;
+}
+
+.delete-data h2 {
+    font-size: 18px;
+    margin: 0;
+    color: #555;
+}
+
+.delete-data button {
+    padding: 10px 20px;
+    background-color:#0f80ac;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.delete-data button:hover {
+    background-color: #007BFF;
+}
+
+/* Estilos padrão para a tabela */
+.table {
+    width: 80%;
+    margin: 0 auto;
+  }
+  
+  /* Estilos para a tabela em telas pequenas (menos de 600px de largura) */
+  @media (max-width: 600px) {
+    .table {
+      width: 100%;
+    }
+    table {
+      font-size: 14px; /* Reduz o tamanho da fonte da tabela */
+    }
+    table td, table th {
+      padding: 8px; /* Reduz o espaçamento interno das células */
+    }
+    .continue-button {
+      text-align: center; /* Centraliza os botões de ação */
+    }
+    .continue-button button {
+      display: block; /* Coloca os botões em uma nova linha */
+      margin: 10px auto; /* Adiciona espaçamento vertical entre os botões */
+    }
+  }
+  
+  /* Estilos para o botão de exclusão em telas pequenas */
+  @media (max-width: 600px) {
+    .delete-data {
+      text-align: center; /* Centraliza o conteúdo do div */
+    }
+    .delete-data button {
+      margin-top: 20px; /* Adiciona espaçamento acima do botão */
+    }
+  }
+  

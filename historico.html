@@ -1,0 +1,209 @@
+
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>ZeusViagens</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+
+    * {
+        padding: 0;
+        margin: 0;
+        font-family: sans-serif;
+    }
+
+    ul {
+        list-style: none;
+        background: #0f80ac;
+        text-align: center;
+    }
+
+    ul li {
+        display: inline-block;
+        position: relative;
+    }
+
+    ul li a {
+        display: block;
+        padding: 20px 25px;
+        color: #FFF;
+        text-decoration: none;
+        text-align: center;
+        font-size: 16px;
+    }
+
+    ul li ul.dropdown li {
+        display: block;
+        background: #0f80ac;
+        margin: 2px 0px;
+    }
+
+    ul li ul.dropdown {
+        width: auto;
+        background: #0d7399;
+        position: absolute;
+        z-index: 999;
+        display: none;
+    }
+
+    ul li a:hover {
+        background: #222;
+    }
+
+    ul li:hover ul.dropdown {
+        display: block;
+    }
+
+    ol {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+
+
+    .receipt-options {
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+    }
+
+    .print-button {
+        display: inline-block;
+        margin: 0 10px;
+        padding: 10px 20px;
+        text-decoration: none;
+        color: #fff;
+        background-color: #0f80ac;
+        border: none;
+        border-radius: 25px;
+        font-size: 1rem;
+        cursor: pointer;
+    }
+
+    .print-button:hover {
+        background-color: #0f80ac;
+    }
+</style>
+
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+
+            <li>
+                <a href="#">Reservas &#x25BE;</a>
+                <ul class="dropdown">
+                    <li><a href="reserva.html">Fazer reserva</a></li>
+                    <li><a href="historico.html">Ver reservas</a></li>
+                </ul>
+            </li>
+            <li><a href="perfilCliente.html">Meu perfil</a></li>
+            <li><a href="contacto.html">Contacte-nos</a></li>
+            <li><a href="login.html">Sair</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <h1 style="margin-top: 150px;">Seu Histórico de reservas</h1>
+    </header> 
+    <header class="flex">
+        <main style="margin-top: 100px;">
+            <div class="table">
+                <table width="100%" cellspacing="0">
+                    <TR>
+                        <TH>ID do Bilhete</TH>
+                        <TH>Nome</TH>
+                        <TH>Numero</TH>
+                        <TH>Origem</TH>
+                        <TH>Destino</TH>
+                        <TH>Data da Viagem</TH>
+                        <TH>Hora de partida</TH>
+                        <TH>Hora de chegada</TH>
+                    <TR>
+                        <TD>01</TD>
+                        <TD>Mateus Matazeus</TD>
+                        <TD>821234567</TD>
+                        <TD>Beira</TD>
+                        <TD>Chimoio</TD>
+                        <TD>10/10/2023</TD>
+                        <TD>04h</TD>
+                        <TD>12h</TD>
+                        <td class="continue-button">
+
+                            <button>Cancelar</button>
+                            <button>Remarcar</button>
+                        </td>
+                    </TR>
+                    <TR>
+                        <TD>02</TD>
+                        <TD>Mateus Matazeus</TD>
+                        <TD>821234567</TD>
+                        <TD>Maputo</TD>
+                        <TD>Pemba</TD>
+                        <TD>10/10/2023</TD>
+                        <TD>04h</TD>
+                        <TD>12h</TD>
+                        <td class="continue-button">
+
+                            <button>Cancelar</button>
+                            <button>Remarcar</button>
+                        </td>
+                    </TR>
+                    <TR>
+                        <TD>03</TD>
+                        <TD>Mateus Matazeus</TD>
+                        <TD>821234567</TD>
+                        <TD>Beira</TD>
+                        <TD>Tete</TD>
+                        <TD>10/10/2023</TD>
+                        <TD>12h</TD>
+                        <TD>20h</TD>
+                        <td class="continue-button">
+
+                            <button>Cancelar</button>
+                            <button>Remarcar</button>
+                        </td>
+                    </TR>
+                    <TR>
+                        <TD>04</TD>
+                        <TD>Mateus Matazeus</TD>
+                        <TD>821234567</TD>
+                        <TD>Nampula</TD>
+                        <TD>Pemba</TD>
+                        <TD>10/10/2023</TD>
+                        <TD>12h</TD>
+                        <TD>22h</TD>
+                        <td class="continue-button">
+
+                            <button>Cancelar</button>
+                            <button>Remarcar</button>
+                        </td>
+                    </TR>
+
+                    </TR>
+                </table>
+            </div>
+        </main>
+        <br>
+        </div>
+    </header>
+    <main class="table" style="margin-top: 0;">
+        <div class="delete-data">
+            <h1>Apagar Registo</h1>
+            <h2>Se deseja apagar todo o seu historico de reservas do sistema, clique no botão abaixo.</h2>
+            <button><a href="#" style="text-decoration: none; color: white;">Apagar</a></button>
+
+        </div>
+    </main>
+</body>
+
+</html>

@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>ZeusViagens</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+
+    <link rel="stylesheet" href="font/fonts.css">
+
+    <link rel="stylesheet" href="css/normalize.css">
+
+    <link rel="stylesheet" href="css/utility.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+</head>
+
+<body>
+
+    <style>
+        .footer-item {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .social-links {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: transparent;
+        }
+       
+        footer {
+            background-color: #0f80ac;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        .footer-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .footer-container a {
+            text-decoration: none;
+            color: white;
+            margin: 0 20px;
+        }
+
+        * {
+            padding: 0;
+            margin: 0;
+            font-family: sans-serif;
+        }
+
+        ul {
+            list-style: none;
+            background: #0f80ac;
+            text-align: center;
+        }
+
+        ul li {
+            display: inline-block;
+            position: relative;
+        }
+
+        ul li a {
+            display: block;
+            padding: 20px 25px;
+            color: #FFF;
+            text-decoration: none;
+            text-align: center;
+            font-size: 16px;
+        }
+
+        ul li ul.dropdown li {
+            display: block;
+            background: #0f80ac;
+            margin: 2px 0px;
+        }
+
+        ul li ul.dropdown {
+            width: auto;
+            background: #0d7399;
+            position: absolute;
+            z-index: 999;
+            display: none;
+        }
+
+        ul li a:hover {
+            background: #222;
+        }
+
+        ul li:hover ul.dropdown {
+            display: block;
+        }
+    </style>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+
+            <li>
+                <a href="#">Reservas &#x25BE;</a>
+                <ul class="dropdown">
+                    <li><a href="reserva.html">Fazer reserva</a></li>
+                    <li><a href="historico.html">Ver reservas</a></li>
+                </ul>
+            </li>
+            <li><a href="perfilCliente.html">Meu perfil</a></li>
+            <li><a href="contacto.html">Contacte-nos</a></li>
+            <li><a href="login.html">Sair</a></li>
+        </ul>
+    </nav>
+
+    <header class="flex" styl>
+        <div class="container">
+            <div class="header-title">
+                <h1>Viaje com segurança</h1>
+                <p>Onde cada jornada se torna uma aventura única! Descubra o Moçambique com a nossa paixão por viagens.
+                    Aproveite o conforto e venha se aventurar e explorar o infinito potencial de viagens com a
+                    ZeusViagens.</p>
+            </div>
+
+        </div>
+    </header>
+
+    <section id="featured" class="py-4">
+        <div class="container">
+            <div class="title-wrap">
+                <span class="sm-title">Conheça alguns lugares antes da sua viagem</span>
+                <h2 class="lg-title">Cidades em destaque</h2>
+            </div>
+
+            <div class="featured-row">
+                <div class="featured-item my-2 shadow">
+                    <img src="_imagens/beira.jpg" alt="featured place">
+                    <div class="featured-item-content">
+                        <span>
+                            <i class="fas fa-map-marker-alt"></i>
+                            Beira, Sofala
+                        </span>
+                        <div>
+                            <p class="text"> Beira é um tesouro a ser descoberto. Com a sua cultura vibrante e culinária
+                                deliciosa, a cidade oferece uma experiência única para os viajantes.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="featured-item my-2 shadow">
+                    <img src="_imagens/maputo.jpeg" alt="featured place">
+                    <div class="featured-item-content">
+                        <span>
+                            <i class="fas fa-map-marker-alt"></i>
+                            Maputo, Maputo
+                        </span>
+                        <div>
+                            <p class="text">Maputo é uma cidade cosmopolita repleta de encantos. A vida noturna animada
+                                e rica herança cultural a tornam um destino imperdível. </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="featured-item my-2 shadow">
+                    <img src="_imagens/pemba.jpg" alt="featured place">
+                    <div class="featured-item-content">
+                        <span>
+                            <i class="fas fa-map-marker-alt"></i>
+                            Pemba, Cabo Delgado
+                        </span>
+                        <div>
+                            <p class="text">Pemba é conhecida por suas águas cristalinas e cenários marinhos
+                                deslumbrantes. Com praias de areias brancas e oportunidades de mergulho de classe
+                                mundial.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="featured-item my-2 shadow">
+                    <img src="_imagens/nampula.jpg" alt="featured place">
+                    <div class="featured-item-content">
+                        <span>
+                            <i class="fas fa-map-marker-alt"></i>
+                            Nampula, Nampula
+                        </span>
+                        <div>
+                            <p class="text">Nampula é uma cidade encantadora e diversificada. Com sua rica herança
+                                cultural, mercados vibrantes e arquitetura fascinante, a cidade oferece uma imersão na
+                                cultura moçambicana. </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="featured-item my-2 shadow">
+                    <img src="_imagens/quelimane.jpg" alt="featured place">
+                    <div class="featured-item-content">
+                        <span>
+                            <i class="fas fa-map-marker-alt"></i>
+                            Quelimane, Zambezia
+                        </span>
+                        <div>
+                            <p class="text">Quelimane é uma cidade repleta de charme e beleza natural. Suas praias
+                                serenas, gastronomia única e atmosfera descontraída atraem visitantes em busca de uma
+                                escapada tranquila.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="featured-item my-2 shadow">
+                    <img src="_imagens/inhambane.jpeg" alt="featured place">
+                    <div class="featured-item-content">
+                        <span>
+                            <i class="fas fa-map-marker-alt"></i>
+                            Inhambane, Inhambane
+                        </span>
+                        <div>
+                            <p class="text">Inhambane é um paraíso tropical. Suas praias paradisíacas, recifes de coral
+                                exuberantes e atividades aquáticas emocionantes atraem amantes do sol e mergulhadores.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-item">
+                <a href="index.html" class="site-brand">
+                    Zeus<span>Viagens</span>
+                </a>
+                <p class="text">A Zeus Viagens é uma empresa de transporte dedicada a proporcionar experiências de
+                    viagem seguras, confiáveis e confortáveis para nossos clientes. Com uma frota moderna e uma equipe
+                    de motoristas altamente treinados, estamos comprometidos em levá-lo aonde você precisa ir, com
+                    comodidade e tranquilidade.</p>
+            </div>
+
+            <div class="footer-item">
+                <h2>Siga-nos no: </h2>
+                <ul class="social-links">
+                    <li>
+                        <a href="#">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+
+            <div class="footer-item">
+                <h2>Lugares populares:</h2>
+                <ul style="background: transparent;">
+                    <li><a href="#">Beira</a></li>
+                    <li><a href="#">Maputo</a></li>
+                    <li><a href="#">Pemba</a></li>
+                    <li><a href="#">Nampula</a></li>
+                    <li><a href="#">Quelimane</a></li>
+                    <li><a href="#">Inhambane</a></li>
+                </ul>
+            </div>
+
+    </footer>
+</body>
+
+</html>

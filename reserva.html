@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>ZeusViagens - Reserva de Passagem</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="form-image">
+            <img src="assets/img//undraw_travelers_re_y25a.svg" alt="">
+        </div>
+        <div class="form">
+            <form action="#">
+                <div class="form-header">
+                    <div class="title">
+                        <h1>Reserve a sua passagem</h1>
+                    </div>
+                
+                </div>
+
+                <div class="input-group">
+                    <div class="input-box">
+                        <label for="firstname">Nome</label>
+                        <input id="firstname" type="text" name="firstname" placeholder="Digite seu primeiro nome" required>
+                    </div>
+
+                    <div class="input-box">
+                        <label for="lastname">Apelido</label>
+                        <input id="lastname" type="text" name="lastname" placeholder="Digite seu Apelido" required>
+                    </div>
+                    <div class="input-box">
+                        <label for="number">Celular</label>
+                        <input id="number" type="tel" name="number" placeholder="(xxx) xx-xxx-xxx" required>
+                    </div>
+        
+                    <div class="input-box">
+                        <label for="passageiros">Numero de passageiros</label>
+                        <input id="confirmPassword" type="number" name="passageiros" placeholder="Digite o numero de passageiros" min="0" required>
+                    </div>
+
+                    <div class="input-box">
+                        <label for="origem">Origem:</label>
+                <select id="origem" name="origem" required>
+                    <option value="">Selecione a Origem</option>
+                    <option value="Beira">Beira</option>
+                    <option value="Maputo">Maputo</option>
+                    <option value="Pemba">Pemba</option>
+                    <option value="Quelimane">Quelimane</option>
+                    <option value="Nampula">Nampula</option>
+                    <option value="Chimoio">Chimoio</option>
+                    <option value="Inhambane">Inhambane</option>
+                    <option value="Xai-Xai">Xai-Xai</option>
+                    <option value="Tete">Tete</option>
+                    <option value="Lichinga">Lichinga</option>
+                </select>
+                    </div>
+                    <div class="input-box">
+                <label for="destino">Destino:</label>
+                <select id="destino" name="destino" required>
+                    <option value="">Selecione o Destino</option>
+                    <option value="Beira">Beira</option>
+                <option value="Maputo">Maputo</option>
+                <option value="Pemba">Pemba</option>
+                <option value="Quelimane">Quelimane</option>
+                <option value="Nampula">Nampula</option>
+                <option value="Chimoio">Chimoio</option>
+                <option value="Inhambane">Inhambane</option>
+                <option value="Xai-Xai">Xai-Xai</option>
+                <option value="Tete">Tete</option>
+                <option value="Lichinga">Lichinga</option>
+                </select>
+                
+                    </div>
+                    <div class="input-box">
+                        <label for="data">Data da Viagem:</label>
+                        <input type="date" name="data" min="today" required>
+                    </div>
+
+                    <div class="input-box">
+                        <label for="hora">Hora da Viagem:</label>
+                  <style>
+        .footer-item {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .social-links {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: transparent;
+        }
+       
+        footer {
+            background-color: #0f80ac;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        .footer-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .footer-container a {
+            text-decoration: none;
+            color: white;
+            margin: 0 20px;
+        }
+
+        * {
+            padding: 0;
+            margin: 0;
+            font-family: sans-serif;
+        }
+
+        ul {
+            list-style: none;
+            background: #0f80ac;
+            text-align: center;
+        }
+
+        ul li {
+            display: inline-block;
+            position: relative;
+        }
+
+        ul li a {
+            display: block;
+            padding: 20px 25px;
+            color: #FFF;
+            text-decoration: none;
+            text-align: center;
+            font-size: 16px;
+        }
+
+        ul li ul.dropdown li {
+            display: block;
+            background: #0f80ac;
+            margin: 2px 0px;
+        }
+
+        ul li ul.dropdown {
+            width: auto;
+            background: #0d7399;
+            position: absolute;
+            z-index: 999;
+            display: none;
+        }
+
+        ul li a:hover {
+            background: #222;
+        }
+
+        ul li:hover ul.dropdown {
+            display: block;
+        }
+    </style>      <select id="hora" name="hora" required>
+                            <option value="">Selecione a Hora</option>
+                            <option value="4h">4h</option>
+                            <option value="12h">12h</option>
+                        </select>
+                    </div>
+
+                </div>
+                <div class="receipt-options">
+                    <a href="index.html" class="download-button">Cancelar</a>
+                    <a href="assento.html" class="print-button">Continuar</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

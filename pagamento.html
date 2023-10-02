@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Pagamento Online</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="form-image">
+            <img src="assets/img//undraw_payments_re_77x0.svg" alt="">
+        </div>
+        <div class="form">
+            <form action="#">
+                <div class="form-header">
+                    <h1>Pagamento Online</h1>
+                </div>
+
+                <div class="input-group">
+                    <div class="input-box">
+                        <label for="numero-cartao">Número do Cartão</label>
+                        <input id="numero-cartao" type="text" name="numero-cartao" placeholder="xxxx xxxx xxxx xxxx"
+                            required>
+                    </div>
+
+                    <div class="input-box">
+                        <label for="nome-cartao">Nome no Cartão</label>
+                        <input id="nome-cartao" type="text" name="nome-cartao" placeholder="Seu Nome" required>
+                    </div>
+
+                    <div class="input-box">
+                        <label for="validade">Data de Validade</label>
+                        <input id="validade" type="text" name="validade" placeholder="MM/AA" required>
+                    </div>
+
+                    <div class="input-box">
+                        <label for="cvv">CVV</label>
+                        <input id="cvv" type="text" name="cvv" placeholder="xxx" required>
+                    </div>
+                </div>
+
+                <div class="input-box">
+                    <label for="valor">Valor a Pagar</label>
+                    <input id="valor" type="text" name="valor" placeholder="0.00 MZN" required>
+                </div>
+
+                <div class="continue-button" style="text-align: center;">
+                    <button><a href="recibo.html">Pagar</a> </button>
+                </div>
+                
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

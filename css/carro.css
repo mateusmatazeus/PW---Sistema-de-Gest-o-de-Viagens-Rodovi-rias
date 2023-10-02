@@ -1,0 +1,136 @@
+ 
+    * {
+        padding: 0;
+        margin: 0;
+        font-family: sans-serif;
+    }
+
+    ul {
+        list-style: none;
+        background: #0f80ac;
+        text-align: center;
+    }
+
+    ul li {
+        display: inline-block;
+        position: relative;
+    }
+
+    ul li a {
+        display: block;
+        padding: 20px 25px;
+        color: #FFF;
+        text-decoration: none;
+        text-align: center;
+        font-size: 16px;
+    }
+
+    ul li ul.dropdown li {
+        display: block;
+        background: #0f80ac;
+        margin: 2px 0px;
+    }
+
+    ul li ul.dropdown {
+        width: auto;
+        background: #0d7399;
+        position: absolute;
+        z-index: 999;
+        display: none;
+    }
+
+    ul li a:hover {
+        background: #222;
+    }
+
+    ul li:hover ul.dropdown {
+        display: block;
+    }
+
+        .button-container {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .home-button, .view-button, .update-button, .delete-button {
+            background-color: #0f80ac;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 10px;
+        }
+
+        .home-button:hover, .view-button:hover, .update-button:hover, .delete-button:hover {
+            background-color: #0f80ac;
+        }
+
+        h1 {
+            font-size: 26px;
+            font-weight: bold;
+            text-align: center;
+            color: #0f80ac;
+            margin-top: 50px;
+        }
+
+        form {
+            max-width: 400px;
+            margin: 0 auto;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="number"],
+        input[type="date"],
+        input[type="time"],
+        select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #0f80ac;
+        }
+
+        .receipt-options {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        
+        
+        .print-button {
+            display: inline-block;
+            margin: 0 10px;
+            padding: 10px 20px;
+            text-decoration: none;
+            color: #fff;
+            background-color: #0f80ac;
+            border: none;
+            border-radius: 25px;
+            font-size: 1rem;
+            cursor: pointer;
+        }
+        
+        
+        .print-button:hover {
+            background-color: #0f80ac;
+        }
